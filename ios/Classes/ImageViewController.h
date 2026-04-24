@@ -6,7 +6,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <GoogleMLKit/MLKit.h>
+//#import <GoogleMLKit/MLKit.h>
+#import "GoogleMLKit/MLKit.h"
 NS_ASSUME_NONNULL_BEGIN
 @interface ImageViewController : UIViewController
 @property(strong, nonatomic) UIImage *image;

@@ -1,4 +1,3 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
@@ -53,12 +52,11 @@ class _MyAppState extends State<MyApp> {
                   child: Text("识别图片"),
                   onPressed: () {
                     final picker = ImagePicker();
-                    picker
-                        .pickImage(source: ImageSource.gallery)
-                        .then((XFile? value) {
+                    picker.pickImage(source: ImageSource.gallery).then((XFile? value) {
                       if (value == null) {
                         return;
                       }
+                      print("path:${value.path}");
                       RecognitionManager.recognition(value.path).then((result) {
                         print("RecognitionQrcode: $result");
                         setState(() {
