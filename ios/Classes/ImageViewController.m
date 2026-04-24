@@ -7,6 +7,8 @@
 
 #import "ImageViewController.h"
 #import "RecognitionConfig.h"
+#import <GoogleMLKit/MLKit.h>
+
 @interface ImageViewController ()
 {
     UIImageView *_imgView; //展示视图
